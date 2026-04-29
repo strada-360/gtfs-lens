@@ -348,9 +348,9 @@ GTFS Lens is in active beta development and your feedback directly shapes the pr
 
 ---
 
-## About Strada360
+## About strada360
 
-[Strada360](https://www.strada360.com) is a transit systems integrator, data analytics expert, and GTFS publisher. We build products and services for transit agencies with data at the core of everything we do.
+[strada360](https://www.strada360.com) is a transit systems integrator, data analytics expert, and GTFS publisher. We build products and services for transit agencies with data at the core of everything we do.
 
 GTFS Lens is part of the **strada NexTrip** product suite. To learn more about our broader offerings — including GTFS & GTFS-RT publishing, real-time vehicle tracking, and scheduling system integration — visit [strada360.com](https://www.strada360.com).
 
