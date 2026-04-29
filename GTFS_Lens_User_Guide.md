@@ -8,8 +8,7 @@
 
 1. [Overview](#overview)
 2. [Getting Started](#getting-started)
-   - [Creating an Account](#creating-an-account)
-   - [Signing In](#signing-in)
+   - [Get Started](#get-started)
 3. [Repository Management](#repository-management)
    - [Public Repositories](#public-repositories)
    - [Private Repositories](#private-repositories)
@@ -33,32 +32,19 @@
 
 Think of GTFS Lens as a **UI-based validator** — a complement to structural tools like the [Canonical GTFS Validator](https://github.com/MobilityData/gtfs-validator). Where the Canonical Validator catches specification non-conformances and structural errors, GTFS Lens lets you see what your data actually represents in context — surfacing real-world issues that may not trigger a validation rule but still affect the rider experience.
 
-> 📸 **_[Screenshot: GTFS Lens dashboard overview]_**
+![GTFS Lens dashboard hero image](./images/dashboard.png)
 
 ---
 
 ## Getting Started
 
-### Creating an Account
+### Get Started
 
-1. Visit [gtfs-lens.strada360.com](https://gtfs-lens.strada360.com).
-2. Click **Sign Up** in the top right corner.
-3. Enter your name, email address, and a password.
-4. Verify your email address via the confirmation link sent to your inbox.
-5. You will be redirected to your dashboard upon successful verification.
+To unlock the full functionality of GTFS Lens, please sign in using one of the following providers:
 
-> 📸 **_[Screenshot: Sign up form]_**
-
----
-
-### Signing In
-
-1. Visit [gtfs-lens.strada360.com](https://gtfs-lens.strada360.com).
-2. Click **Sign In**.
-3. Enter your registered email and password.
-4. Click **Sign In** to proceed to your dashboard.
-
-> 📸 **_[Screenshot: Sign in form]_**
+- **Google**
+- **Facebook**
+- **Microsoft** — personal accounts only (Outlook, Hotmail, Live)
 
 ---
 
@@ -79,9 +65,9 @@ A public repository loads a feed from a publicly available GTFS source. GTFS Len
 5. Click **Load Feed** to import and process the data.
 6. Once processing is complete, the repository will appear on your dashboard ready to explore.
 
-> 📸 **_[Screenshot: New public repository — Mobility Database search]_**
+If the feed is not found please contact us at support@strada360.com with the details of the agency and the feed name.
 
-> 📸 **_[Screenshot: Feed selection results list]_**
+![New public repository — Mobility Database search](./images/repository-public.png)
 
 ---
 
@@ -98,7 +84,7 @@ A private repository allows you to upload and review a GTFS feed that has not ye
 5. Click **Load Feed** to import and process the data.
 6. Once processing is complete, the repository will appear on your dashboard.
 
-> 📸 **_[Screenshot: New private repository — file upload]_**
+![New private repository — File upload](./images/repository-private.png)
 
 > **Why use a private repository?**
 > - Review and validate an upcoming schedule change before publication.
@@ -112,8 +98,7 @@ A private repository allows you to upload and review a GTFS feed that has not ye
 
 Feed processing time varies depending on the size of the GTFS file. A progress indicator will display on the repository card during import. You will receive a notification when the feed is ready to explore.
 
-> 📸 **_[Screenshot: Repository card showing processing progress]_**
-
+![Repository card showing processing progress](./images/repository-processing.png)
 ---
 
 ## The Five Views
@@ -137,9 +122,17 @@ The Calendar View displays your feed's service calendar as a visual, day-by-day 
 2. Navigate between months using the arrows at the top of the calendar.
 3. Click on any day to see the list of active service IDs and their associated routes.
 
-> 📸 **_[Screenshot: Calendar View — monthly grid with active service indicators]_**
+![Calendar View — monthly grid with active service indicators](./images/calendar.png)
 
-> 📸 **_[Screenshot: Calendar View — day detail panel showing active services]_**
+![Calendar View — day detail panel showing active services](images/calendar-day-detail.png)
+
+File in use here are:
+- `calendar.txt`
+- `calendar_dates.txt`
+- `routes.txt`
+- `trips.txt`
+- `stop_times.txt`
+- `stops.txt`
 
 ---
 
@@ -159,9 +152,18 @@ The Timetable View renders your GTFS data as a formatted timetable — the same 
 3. The timetable renders with stops as rows and trips as columns, or vice versa depending on your selection.
 4. Scroll horizontally to view all trips across the service day.
 
-> 📸 **_[Screenshot: Timetable View — route query selector]_**
 
-> 📸 **_[Screenshot: Timetable View — rendered timetable grid]_**
+![route-selector.png](images/route-selector.png)
+
+![Timetable View — rendered timetable grid](images/timetable.png)
+
+File in use here are:
+- `routes.txt`
+- `calendar.txt`
+- `calendar_dates.txt`
+- `trips.txt`
+- `stop_times.txt`
+- `stops.txt`
 
 ---
 
@@ -177,13 +179,20 @@ The Map View renders your route shapes on an interactive map, using the geometry
 
 **How to use:**
 1. Select **Map** from the navigation panel.
-2. Use the filter panel to select a date, service type, or specific route.
-3. Routes are rendered as coloured lines on the map. Click a route to view its details.
+2. Use the filter panel to select a date, service type, and specific route.
+3. The Route is rendered as coloured line using the colors defined in the routes.txt file on the map. Click a route to view its details.
 4. Zoom and pan to inspect specific areas of the network.
 
-> 📸 **_[Screenshot: Map View — full network map]_**
+![map.png](images/map.png)
 
-> 📸 **_[Screenshot: Map View — single route selected with detail panel]_**
+Files in use here are:
+- `routes.txt`
+- `calendar.txt`
+- `calendar_dates.txt`
+- `shapes.txt`
+- `stop_times.txt`
+- `trips.txt`
+- `stops.txt`
 
 ---
 
@@ -203,9 +212,8 @@ The Stop View lets you explore your GTFS data from the perspective of an individ
 3. The stop detail panel displays all routes serving the stop, along with a timetable of passing times.
 4. Filter by service type or date to narrow the results.
 
-> 📸 **_[Screenshot: Stop View — stop search]_**
+![Stop View — stop detail with passing times](images/stop.png)
 
-> 📸 **_[Screenshot: Stop View — stop detail with passing times]_**
 
 ---
 
@@ -227,9 +235,14 @@ Stop & Ask AI is a conversational query interface that lets you ask plain-langua
 4. GTFS Lens returns an answer drawn directly from your feed, with supporting data where relevant.
 5. Follow-up questions are supported — the AI maintains context across your session.
 
-> 📸 **_[Screenshot: Stop & Ask AI — query input]_**
 
-> 📸 **_[Screenshot: Stop & Ask AI — example answer with supporting data]_**
+Some examples of Stop & Ask AI answers:
+
+![Frequency query](./images/stop-and-ask-frequency.png)
+![First/last service](images/stop-and-ask-first-last-service.png)
+![Service pattern query](images/stop-and-ask-service-calendar-working.png)
+![Stop coverage](images/stop-and-ask-stop-coverage.png)
+![Feed summary](images/stop-and-ask-feed-summary.png)
 
 ---
 
@@ -263,6 +276,8 @@ One of the clearest illustrations of this gap involves the `service_id` field in
 Consider AC Transit's feed. The agency operates 46 school routes in the 600–699 series that run only when schools are in session. However, because the `service_id` values in the feed are numeric and carry no semantic label, the AI cannot distinguish a school-day service from a weekend service by the data alone. A natural question like:
 
 > *"Are school routes running on April 14th?"*
+
+![Service pattern query](images/stop-and-ask-service-calendar.png)
 
 ...cannot be answered reliably — not because the AI lacks capability, but because the specification does not require `service_id` to carry descriptive meaning. The data simply does not contain the information needed to answer the question.
 
