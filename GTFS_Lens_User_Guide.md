@@ -214,6 +214,13 @@ The Stop View lets you explore your GTFS data from the perspective of an individ
 
 ![Stop View — stop detail with passing times](images/stop.png)
 
+Files in use here are:
+- `routes.txt`
+- `calendar.txt`
+- `calendar_dates.txt`
+- `stop_times.txt`
+- `trips.txt`
+- `stops.txt`
 
 ---
 
