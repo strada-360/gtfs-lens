@@ -2,7 +2,7 @@
 
 **An AI-powered transit data platform for transit agencies — free, open, and built on GTFS.**
 
-> **Beta Release** | Free to use | Built by [Strada360](https://www.strada360.com)
+> **Beta Release** | Free to use | Built by [strada360](https://www.strada360.com)
 
 [![Live App](https://img.shields.io/badge/Try%20It-gtfs--lens.strada360.com-blue?style=for-the-badge)](https://gtfs-lens.strada360.com)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](./LICENSE)
