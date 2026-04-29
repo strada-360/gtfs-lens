@@ -77,9 +77,9 @@ GTFS Lens is in active beta — your feedback shapes the roadmap.
 
 ---
 
-## About Strada360
+## About strada360
 
-[Strada360](https://www.strada360.com) is a transit systems integrator, data analytics expert, and GTFS publisher. Data is at the core of everything we do.
+[strada360](https://www.strada360.com) is a transit systems integrator, data analytics expert, and GTFS publisher. Data is at the core of everything we do.
 
 ---
 
