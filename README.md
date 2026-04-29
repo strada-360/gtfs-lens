@@ -17,6 +17,17 @@
 
 GTFS Lens lets anyone inside a transit agency **see and understand their GTFS feed** — without opening a spreadsheet or writing a single line of SQL. It acts as a **UI-based validator**, complementing structural tools like the [Canonical GTFS Validator](https://github.com/MobilityData/gtfs-validator) by making your data visually navigable and queryable in plain language.
 
+GTFS Lens currently focuses on the following core GTFS schedule files:
+- feed_info.txt
+- agency.txt
+- calendar.txt
+- calendar_dates.txt
+- routes.txt
+- stops.txt
+- shapes.txt
+- stop_times.txt
+- trips.txt
+
 ---
 
 ## Five Views. One Feed.
