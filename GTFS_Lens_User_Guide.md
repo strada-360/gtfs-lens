@@ -1,6 +1,6 @@
 # GTFS Lens – User Guide
 
-> **Beta Release** | Free to use | [gtfs-lens.strada360.com](https://gtfs-lens.strada360.com) | Built by [Strada360](https://www.strada360.com)
+> **Beta Release** | Free to use | [gtfs-lens.strada360.com](https://gtfs-lens.strada360.com) | Built by [strada360](https://www.strada360.com)
 
 ---
 
